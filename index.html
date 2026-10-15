@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FoodBites - Online Food Ordering Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8fafc;
+      margin: 0;
+      padding: 20px;
+      color: #1e293b;
+    }
+    header {
+      text-align: center;
+      background-color: #e11d48;
+      color: white;
+      padding: 24px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+    .badge {
+      display: inline-block;
+      background-color: #0284c7;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin-top: 8px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #e11d48;
+      border-bottom: 2px solid #f1f5f9;
+      padding-bottom: 8px;
+      font-size: 1.25rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid #f1f5f9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+    .price {
+      font-weight: bold;
+      color: #059669;
+    }
+    .avail {
+      font-size: 0.75rem;
+      background: #dcfce7;
+      color: #166534;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .promo {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 12px;
+      border-radius: 4px;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FoodBites Online Portal</h1>
+    <div class="badge">Version: v1.0.0 (Blue - Active Release)</div>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Restaurant Details</h2>
+      <p><strong>Name:</strong> Grand Bistro & Kitchen</p>
+      <p><strong>Location:</strong> Food Street, Phase 2</p>
+      <p><strong>Operating Hours:</strong> 10:00 AM - 11:00 PM</p>
+    </div>
+
+    <div class="card">
+      <h2>Food Categories</h2>
+      <ul>
+        <li>Italian & Continental</li>
+        <li>North & South Indian Delights</li>
+        <li>Beverages & Cold Brews</li>
+        <li>Artisan Desserts</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Featured Menu Items & Prices</h2>
+      <ul>
+        <li>
+          <span>Woodfired Margherita Pizza</span>
+          <span class="price">₹299</span>
+          <span class="avail">Available</span>
+        </li>
+        <li>
+          <span>Classic Paneer Butter Masala</span>
+          <span class="price">₹249</span>
+          <span class="avail">Available</span>
+        </li>
+        <li>
+          <span>Triple Chocolate Lava Cake</span>
+          <span class="price">₹149</span>
+          <span class="avail">Available</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Promotional Offers</h2>
+      <div class="promo">
+        <strong>FLAT50:</strong> 50% discount up to ₹100 on your first order!
+      </div>
+      <div class="promo">
+        <strong>WEEKENDDELIGHT:</strong> Free dessert on all orders above ₹499.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
