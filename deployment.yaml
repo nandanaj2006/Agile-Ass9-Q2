@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: deployment
 metadata:
   name: food-portal-blue
 spec:
@@ -34,7 +34,7 @@ spec:
           periodSeconds: 3
 ---
 apiVersion: apps/v1
-kind: Deployment
+kind: deployment
 metadata:
   name: food-portal-green
 spec:
